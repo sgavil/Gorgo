@@ -1,0 +1,9 @@
+
+#Visual studio 
+.vs/
+*.user
+
+#Binaries
+bin/
+bin-inter/
+
