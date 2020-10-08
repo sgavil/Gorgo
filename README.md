@@ -1,6 +1,24 @@
 # Gorgo
 
+## Building project
+
+
+To build this project at least **CMake 3.18.3** is required. Actually only windows visual studio solution projects are supported.
+
+Open a command line in main directory where `CMakeLists.txt` is located.
+
+```bash
+mkdir build
+cd build
+cmake .. -G "Visual Studio 16 2019" #15 2018, 14 2017...
+```
+---
+## Building Gorgo
+
+
+---
 ## Coding Style
+
 * Interfaces starts by `I`
 * Abstracts starts by `A`
 * Class names: `UpperCamelCase`

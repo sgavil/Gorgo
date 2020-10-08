@@ -1,9 +1,13 @@
 
 #Visual studio 
 .vs/
+.vscode/
 *.user
 
 #Binaries
 bin/
 bin-inter/
+
+#Build
+build/
 
