@@ -21,12 +21,18 @@
     <ClCompile Include="src\Gorgo\Application.h">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Math\Vector.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Gorgo\Core.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Gorgo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Math\Vector.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -127,6 +127,9 @@
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)bin\$(ProjectName)\$(Configuration)\$(TargetName).dll" "$(SolutionDir)bin\Sandbox\$(Configuration)\$(TargetName).dll" </Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
@@ -143,14 +146,19 @@
       <OptimizeReferences>true</OptimizeReferences>
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
+    <PostBuildEvent>
+      <Command>copy "$(SolutionDir)bin\$(ProjectName)\$(Configuration)\$(TargetName).dll" "$(SolutionDir)bin\Sandbox\$(Configuration)\$(TargetName).dll" </Command>
+    </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\Gorgo\Application.cpp" />
     <ClCompile Include="src\Gorgo\Application.h" />
+    <ClCompile Include="src\Math\Vector.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Gorgo.h" />
     <ClInclude Include="src\Gorgo\Core.h" />
+    <ClInclude Include="src\Math\Vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
