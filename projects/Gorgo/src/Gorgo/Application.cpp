@@ -1,5 +1,15 @@
 #include "Application.h"
 
-Gorgo::Application::Application()
-{
+namespace Gorgo {
+
+	Application::Application()
+	{
+	}
+	Application::~Application()
+	{
+	}
+	void Application::Run()
+	{
+		while (1);
+	}
 }

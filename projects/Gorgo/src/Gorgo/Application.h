@@ -6,9 +6,11 @@ namespace Gorgo
 	{
 	public:
 		Application();
-		virtual void Run() = 0;
-
-	private:
+		virtual ~Application();
+		void Run();	
 
 	};
+
+	//To be defined in CLIENT
+	Application* CreateApplication();
 }
