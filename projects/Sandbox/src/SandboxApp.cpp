@@ -1,5 +1,6 @@
 #include <Gorgo.h>
 
+#include <iostream>
 
 class SandboxApp : public Gorgo::Application {
 public:
@@ -17,9 +18,11 @@ private:
 
 int main() {
 
-	SandboxApp* app = new SandboxApp();
+	/*SandboxApp* app = new SandboxApp();
 	app->Run();
-	delete app;
+	delete app;*/
+	Gorgo::Vector v1(3.0f, 5.0f, 5.0f);
+	std::cout << v1;
 
 	return 0;
 }
