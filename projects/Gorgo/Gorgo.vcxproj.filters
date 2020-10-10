@@ -16,13 +16,21 @@
     <ClInclude Include="src\Gorgo\Core.h">
       <Filter>Gorgo</Filter>
     </ClInclude>
+    <ClInclude Include="src\Gorgo\EntryPoint.h">
+      <Filter>Gorgo</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Gorgo\Log.h">
+      <Filter>Gorgo</Filter>
+    </ClInclude>
     <ClInclude Include="src\Math\Vector.h">
       <Filter>Math</Filter>
     </ClInclude>
-    <ClInclude Include="src\Gorgo\EntryPoint.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Gorgo\Application.cpp">
+      <Filter>Gorgo</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Gorgo\Log.cpp">
       <Filter>Gorgo</Filter>
     </ClCompile>
     <ClCompile Include="src\Math\Vector.cpp">

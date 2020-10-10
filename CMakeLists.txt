@@ -10,6 +10,9 @@ set(gorgo_build_dll "GRG_BUILD_DLL")
 set(core_src_dir "${CMAKE_CURRENT_SOURCE_DIR}/projects/Gorgo/src/")
 set(sandbox_src_dir "${CMAKE_CURRENT_SOURCE_DIR}/projects/Sandbox/src/")
 
+# Dependencies dir
+set(dependencies_dir "${CMAKE_CURRENT_SOURCE_DIR}/dependencies/vendor/")
+
 # Include files .h and cpp
 file (GLOB_RECURSE core_src_files "${core_src_dir}*.h" "${core_src_dir}*.cpp")
 file (GLOB_RECURSE sandbox_src_files "${sandbox_src_dir}*.h" "${sandbox_src_dir}*.cpp") 
@@ -17,6 +20,7 @@ file (GLOB_RECURSE sandbox_src_files "${sandbox_src_dir}*.h" "${sandbox_src_dir}
 # Set core project (target)
 add_library(Gorgo SHARED ${core_src_files})
 target_compile_definitions(Gorgo PRIVATE ${windows_directive} ${gorgo_build_dll})
+target_include_directories(Gorgo PRIVATE ${dependencies_dir}spdlog/include/)
 
 # Gorgo output files config
 set_target_properties(Gorgo 
@@ -31,7 +35,7 @@ PDB_OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/bin-inter/")
 # Set Sandbox project (target) and set it as startup VS project
 add_executable(Sandbox ${sandbox_src_files})
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT Sandbox)
-target_include_directories(Sandbox PRIVATE ${core_src_dir})
+target_include_directories(Sandbox PRIVATE ${core_src_dir} ${dependencies_dir}spdlog/include/)
 target_compile_definitions(Sandbox PRIVATE ${windows_directive})
 
 #Sandbox output files config

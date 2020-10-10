@@ -18,6 +18,11 @@ project "Gorgo"
       "projects/%{prj.name}/src/**.cpp"
    }
 
+   includedirs
+   {
+      "dependencies/vendor/spdlog/include/"
+   }
+
    filter "system:windows"
       staticruntime "On"
       systemversion "latest"
@@ -56,6 +61,7 @@ location "projects/%{prj.name}"
 
    includedirs 
    {
+      "dependencies/vendor/spdlog/include/",
       "projects/Gorgo/src"
    }
    links 

@@ -59,6 +59,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>GRG_PLATFORM_WINDOWS;GRG_BUILD_DLL;GRG_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\dependencies\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -77,6 +78,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>GRG_PLATFORM_WINDOWS;GRG_BUILD_DLL;GRG_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\..\dependencies\vendor\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
@@ -99,13 +101,15 @@
     <ClInclude Include="src\Gorgo\Application.h" />
     <ClInclude Include="src\Gorgo\Core.h" />
     <ClInclude Include="src\Gorgo\EntryPoint.h" />
+    <ClInclude Include="src\Gorgo\Log.h" />
     <ClInclude Include="src\Math\Vector.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Gorgo\Application.cpp" />
+    <ClCompile Include="src\Gorgo\Log.cpp" />
     <ClCompile Include="src\Math\Vector.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
-</Project>
+</Project> 

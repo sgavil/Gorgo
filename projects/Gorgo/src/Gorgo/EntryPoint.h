@@ -6,7 +6,9 @@ extern Gorgo::Application* Gorgo::CreateApplication();
 
 int main(int argc, char** argv) {
 
-	printf("Gorgo started");
+	Gorgo::Log::Init();
+	GRG_CORE_INFO("Gorgo initialized...");
+
 	auto app = Gorgo::CreateApplication();
 	app->Run();
 	delete app;
