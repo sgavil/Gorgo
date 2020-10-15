@@ -1,4 +1,6 @@
 #include "Application.h"
+#include "Events/MouseEvent.h"
+#include "Log.h"
 
 namespace Gorgo {
 
@@ -10,6 +12,9 @@ namespace Gorgo {
 	}
 	void Application::Run()
 	{
-		while (1);
+		MouseMovedEvent e(1280, 720);
+		GRG_TRACE(e);
+
+		while (true);
 	}
 }

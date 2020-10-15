@@ -101,6 +101,10 @@
     <ClInclude Include="src\Gorgo\Application.h" />
     <ClInclude Include="src\Gorgo\Core.h" />
     <ClInclude Include="src\Gorgo\EntryPoint.h" />
+    <ClInclude Include="src\Gorgo\Events\ApplicationEvent.h" />
+    <ClInclude Include="src\Gorgo\Events\Event.h" />
+    <ClInclude Include="src\Gorgo\Events\KeyEvent.h" />
+    <ClInclude Include="src\Gorgo\Events\MouseEvent.h" />
     <ClInclude Include="src\Gorgo\Log.h" />
     <ClInclude Include="src\Math\Vector.h" />
   </ItemGroup>
@@ -112,4 +116,4 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
-</Project> 
+</Project>

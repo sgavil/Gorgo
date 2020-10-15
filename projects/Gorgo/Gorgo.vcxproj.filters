@@ -25,6 +25,10 @@
     <ClInclude Include="src\Math\Vector.h">
       <Filter>Math</Filter>
     </ClInclude>
+    <ClInclude Include="src\Gorgo\Events\Event.h" />
+    <ClInclude Include="src\Gorgo\Events\KeyEvent.h" />
+    <ClInclude Include="src\Gorgo\Events\MouseEvent.h" />
+    <ClInclude Include="src\Gorgo\Events\ApplicationEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Gorgo\Application.cpp">

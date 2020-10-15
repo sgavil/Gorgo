@@ -3,6 +3,8 @@
 #include <spdlog/spdlog.h>
 #include "Core.h"
 
+#include <spdlog/fmt/ostr.h>
+
 namespace Gorgo 
 {
 	/// <summary>
