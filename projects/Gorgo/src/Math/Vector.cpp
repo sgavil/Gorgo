@@ -1,4 +1,6 @@
+#include "grgpch.h"
 #include "Vector.h"
+
 
 namespace Gorgo {
 

@@ -12,6 +12,10 @@ project "Gorgo"
 
    targetdir ("bin/" .. outputdir)
    objdir ("bin-inter/" .. outputdir)
+
+   pchheader "grgpch.h"
+   pchsource "projects/%{prj.name}/src/grgpch.cpp"
+
    files
    {
       "projects/%{prj.name}/src/**.h",
@@ -20,6 +24,7 @@ project "Gorgo"
 
    includedirs
    {
+      "projects/%{prj.name}/src",
       "dependencies/vendor/spdlog/include/"
    }
 
